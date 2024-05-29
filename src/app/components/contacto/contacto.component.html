@@ -1,0 +1,25 @@
+<div class="animated fadeIn mt-2">
+  <h1>Contacto</h1>
+  <small>
+    Cuéntanos que opinas de la aplicación... :)
+  </small>
+  <hr>
+  <div class="row">
+    <div class="col">
+      <div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo:</label>
+          <input type="email" class="form-control bg-dark text-white" #email>
+        </div>
+        <div class="mb-3">
+          <label for="comment" class="form-label">Comentario:</label>
+          <textarea class="form-control bg-dark text-white" #comment cols="5" rows="2"></textarea>
+        </div>
+        <button type="button" class="btn btn-outline-light" (click)="sendComment(email.value, comment.value)">
+          <i class="fa fa-paper-plane"></i>&nbsp;Enviar</button>
+      </div>
+    </div>
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
+</div>

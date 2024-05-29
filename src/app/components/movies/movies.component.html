@@ -1,0 +1,11 @@
+<div class="card-columns">
+  <div class="card bg-dark text-white" *ngFor="let item of movies">
+    <div class="card-header h3">{{ item.title }}</div>
+    <img [src]="item.img_url" class="card-img-top" alt="No image...">
+    <div class="card-body">
+        <small></small>
+        <hr>
+        <p class="text-justify overview">{{ item.overview }}</p>
+    </div>
+</div>
+</div>
